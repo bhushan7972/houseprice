@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+   <body bgcolor="lightblue">
+   <table border = 1 align="center">
+       <tr>
+               <th> PARAMETER </th>
+               <td> <B>DATA</B> </td>
+            </tr>
+         {% for key, value in result.items() %}
+            <tr>
+               <th> {{ key }} </th>
+               <td> {{ value }} </td>
+            </tr>
+         {% endfor %}
+      </table>
+      <table border = 1 align="CENTER">
+
+
+          <tr>
+               <tH>   DIFFERENT ALGORITHM</tH>
+               <td><B>HOUSE PRICE  </td>
+            </tr>
+           <tr>
+               <td><h4>  House Price By Decision Tree</h4> </td>
+               <td> <h4>{{result0}} </h4></td>
+            </tr>
+           <tr>
+               <td> <h4>  House Price By Random forest</h4></td>
+               <td><h4> {{result1}} </h4></td>
+            </tr>
+          <tr>
+               <td> <h4>  House Price By Linear Regreesion</h4></td>
+               <td><h4> {{result2}} </h4></td>
+            </tr>
+
+      </table>
+   </body>
+</html>
